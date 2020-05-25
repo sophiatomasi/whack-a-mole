@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Whack-A-Mole</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <h1 style="color:cornflowerblue;"><ins>Whack-A-Mole</ins></h1>
+        
+        <h4>Hits: <span class="hits">0</span> </h4>
+    
+        <h4>Time Remaining: <span class="timer">10</span> </h4>
+        
+        <button class="button-start" onclick="startGame()">Start</button>
+        
+        <div class="grid">
+            <div class="game">
+                <img src="hole.png" class="image-hole">
+                <img src="diglett.png" class="image-mole hide">
+            </div>
+        </div>
+    </body>
+    <script src="app.js" charset="utf-8"> </script>
+</html>
