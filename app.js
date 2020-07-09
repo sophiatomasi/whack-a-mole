@@ -5,6 +5,7 @@ var timeRemaining = document.querySelector(".timer");
 let time = 10 ;
 let lastHole = 0 ;
 let gameOver = false ;
+var startButton = document.querySelector(".button-start") ;
 
 function multiplyNode(node, count, deep) {
     for (var i = 0, copy; i < count - 1; i++) {
@@ -35,7 +36,7 @@ function randomHole(holes) {
 }
 
 function popMole() {
-    const time = randomTime(500, 1000); //get random time b/w 2 ms and 1s
+    const time = randomTime(600, 1000); //get random time b/w over 2 ms and 1s
     const index = randomHole(holes) ; //get your random hole
     moles[index].classList.add("show");
     //console.log(index) ;
@@ -72,9 +73,11 @@ function startGame() {
     timer() ;
     gameOver = false ; //for playing again
     popMole() ;
+    startButton.disabled = true ;
     //after 10 seconds, end the game 
     setTimeout(() => {
         gameOver = true ;
+        startButton.disabled = false ;
     }, 10000); 
 }
 
