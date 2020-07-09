@@ -2,6 +2,8 @@
 h1 {
     position: relative;
     bottom: 10px;
+    font-family: monospace;
+    font-size: 35px;
 }
 
 h4 {
@@ -23,8 +25,8 @@ h4 {
     cursor: pointer;
     background-color: rgb(178, 233, 178);
     position: absolute;
-    top: 37px;
-    left: 300px;
+    top: 44px;
+    left: 301px;
 }
 
 .game {
