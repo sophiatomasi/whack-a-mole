@@ -2,5 +2,7 @@
     "name": "whack-a-mole",
     "version": "0.0.1",
     "description": "whack-a-mole game app",
-    "dependencies": {}
-  }
+    "dependencies": {
+        "express": "^4.15.2"
+    }
+}
