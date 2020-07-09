@@ -1,5 +1,10 @@
 # Whack-a-Mole
 
-A simple whack a mole game. 
+This project was created using Javascript, HTML, and CSS.
 
-Download the files and open using the bash terminal command 'open ./index.html' to play the game.
+# Setup
+
+- `npm install` to download the dependencies
+- `npm start` to run locally (equivalent to `node server.js`)
+
+Game will serve on http://localhost:3000/.
