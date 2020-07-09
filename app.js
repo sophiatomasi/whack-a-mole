@@ -6,6 +6,7 @@ let time = 10 ;
 let lastHole = 0 ;
 let gameOver = false ;
 var startButton = document.querySelector(".button-start") ;
+var whackSound = new Audio('whack_sound.wav');
 
 function multiplyNode(node, count, deep) {
     for (var i = 0, copy; i < count - 1; i++) {
@@ -57,6 +58,8 @@ function clickMole() {
         mole.onclick = function() {
         //    clickMole(i) ;
             this.classList.remove("show");
+            //sound for mole
+            whackSound.play();
             hits++;
             hitScore.textContent = hits;
         };
