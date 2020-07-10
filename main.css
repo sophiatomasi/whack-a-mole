@@ -45,8 +45,16 @@ h4 {
     width: 60%;
     height: 100%;
     position: absolute;
-    top: 0;
+    /*top: 0;*/
     left: 20%;
+    animation: riseup 1s;
+    animation-direction: alternate;
+}
+
+@keyframes riseup {
+    0%   {bottom: 0px;}
+    50% {bottom: 10px;}
+    100% {bottom: 0px;}
 }
 
 .show {
