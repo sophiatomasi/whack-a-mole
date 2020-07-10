@@ -57,9 +57,8 @@ function clickMole() {
         var mole = moles[i];
         mole.onclick = function() {
         //    clickMole(i) ;
-            this.classList.remove("show");
-            //sound for mole
             whackSound.play();
+            this.classList.remove("show");
             hits++;
             hitScore.textContent = hits;
         };
